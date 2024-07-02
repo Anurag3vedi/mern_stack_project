@@ -4,7 +4,7 @@ Sure! Here's the enhanced and unique README file with an added section for the a
 
 # 🏥 Hospital Management System
 
-Welcome to the **Hospital Management System (HMS)**! This project is a comprehensive solution designed to streamline the administrative and operational processes of a hospital. Whether you are managing patient records, staff details, or scheduling appointments, HMS has got you covered.
+Welcome to the **ZEE CARE HOSPITAL PVT LTD**! This project is a comprehensive solution designed to streamline the administrative and operational processes of a hospital. Whether you are managing patient records, staff details, or scheduling appointments, HMS has got you covered.
 
 ## ✨ Features
 
