@@ -1,1 +1,1 @@
-# mern_stack_project
+# Hospital management system
