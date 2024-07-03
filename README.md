@@ -1,113 +1,206 @@
-Sure! Here's the enhanced and unique README file with an added section for the author:
+# Hospital Management System
 
----
+Welcome to the Hospital Management System, a comprehensive solution for managing hospital operations including patient management, appointment scheduling, and administrative controls.
 
-# 🏥 Hospital Management System
+## Authors
+   *Training project*
 
-Welcome to the **ZEE CARE HOSPITAL PVT LTD**! This project is a comprehensive solution designed to streamline the administrative and operational processes of a hospital. Whether you are managing patient records, staff details, or scheduling appointments, HMS has got you covered.
+- *Anurag Kushwaha*
+  
+  - *Email-* anuragkushwaha1501@gmail.com
+    
+- *Anurag Trivedi*
+  
+  - *Email-* anuragtrivediindian@gmail.com
+    
+- *Aryan Chaurasia*
+  
+  - *Email-* aryanchaurasia033@gmail.com
+  
 
-## ✨ Features
+## Frontend
 
-- **Patient Management**: Easily register new patients, update their information, and maintain comprehensive medical histories.
-- **Staff Management**: Keep track of hospital staff details, including doctors, nurses, and administrative personnel.
-- **Appointment Scheduling**: Schedule and manage patient appointments efficiently.
-- **Billing System**: Generate and manage patient bills, process payments, and handle insurance claims seamlessly.
-- **Inventory Management**: Track and manage hospital inventory, including medicines and medical equipment.
-- **Reports**: Generate insightful reports for better decision-making.
+### Features
 
-## 🛠️ Tech Stack
+- *Patient Management*: Add, update, and view patient information.
+- *Appointment Scheduling*: Schedule, reschedule, and cancel patient appointments.
+- *Doctor Dashboard*: Manage doctor schedules and availability.
+- *Admin Dashboard*: Administrative controls for managing users and roles.
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
-- **Hosting**: Heroku
+### Technologies Used
 
-## 🚀 Getting Started
+- *React*: JavaScript library for building user interfaces.
+- *Vite*: Fast frontend build tool with modern development features.
+- *React Router*: Declarative routing for React applications.
+- *Axios*: Promise-based HTTP client for backend API communication.
+
+### Installation
 
 ### Prerequisites
 
 Ensure you have the following installed:
+
 - Node.js
-- npm (Node Package Manager)
-- MongoDB
+- npm 
 
-### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/hospital-management-system.git
-   cd hospital-management-system
-   ```
+To get a local copy up and running:
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+1. Clone the repository:
+bash
+git clone https://github.com/anuragkushwaha1501/Hospital-Management-System.git
+cd frontend
 
-3. **Set up environment variables**
 
-   Create a `.env` file in the root directory and add the following:
-   ```
-   MONGO_URI=your-mongodb-uri
-   JWT_SECRET=your-jwt-secret
-   ```
+2. Install dependencies:
+bash
+npm install
 
-4. **Run the application**
-   ```bash
-   npm start
-   ```
 
-   Access the application at `http://localhost:3000`.
+3. Run the development server:
+bash
+npm run dev
 
-## 📖 Usage
-
-### Admin Panel
-- Log in as an admin to manage hospital resources.
-- Add or update patient and staff information.
-- Schedule appointments and manage billing.
-
-### Patient Portal
-- Patients can log in to view their medical history and appointments.
-- Request appointment scheduling with specific doctors.
-
-### Staff Portal
-- Hospital staff can log in to manage patient records and appointments.
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Description of your changes"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
-
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## 🧑‍💻 Author
-
-- **Your Name**: [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
-- **GitHub**: [your-username](https://github.com/your-username)
-
-## 📬 Contact
-
-For any inquiries or feedback, please reach out:
-- **Project Link**: [https://github.com/your-username/hospital-management-system](https://github.com/your-username/hospital-management-system)
 
 ---
 
-Feel free to customize the "Author" section with your actual name, email, LinkedIn profile, and GitHub username. This version provides a clear, engaging, and visually appealing overview of your project while giving credit to the author.
+## Backend
+
+### Features
+
+- *User Authentication*: Admin, Doctor, and Patient roles with JWT.
+- *Appointment Management*: CRUD operations for appointments.
+- *User Registration*: Register and manage users (Doctors, Patients).
+- *Messaging System*: Allows users to send and receive messages.
+- *File Upload*: Upload doctor avatars using Cloudinary.
+
+### Technologies Used
+
+- *Node.js*: JavaScript runtime environment.
+- *Express.js*: Web application framework for Node.js.
+- *MongoDB*: NoSQL database for storing application data.
+- *Mongoose*: MongoDB object modeling for Node.js.
+- *JWT*: JSON Web Tokens for authentication.
+- *Cloudinary*: Cloud-based image and video management services.
+
+### Installation
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js
+- npm 
+- MongoDB Compass / Create MongoDB Atlas Account 
+- Create Cloudinary Account
+
+To get a local copy up and running:
+
+1. Clone the repository:
+bash
+git clone https://github.com/anuragkushwaha1501/Hospital-Management-System.git
+cd backend
+
+
+2. Install dependencies:
+bash
+npm install
+
+
+3. Set up environment variables:
+Create a .env file in the backend directory and add the given details:
+plaintext
+PORT=
+MONGO_URL=
+FRONTEND_URL=
+DASHBOARD_URL=
+JWT_SECRET_KEY=
+JWT_EXPIRES=
+COOKIE_EXPIRE=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_SECRET=
+CLOUDINARY_API_KEY=
+
+
+4. Run the development server:
+bash
+npm run dev
+
+
+*API Endpoints*
+
+Detailed documentation of API endpoints is available in respective router files (userRouter.js, appointmentRouter.js, messageRouter.js). Ensure proper JWT authentication headers are set for protected routes.
+
+*Authentication*
+
+Supports authentication for Admin, Doctor, and Patient roles using JWT. Middleware functions (isAdminAuthenticated, isPatientAuthenticated) enforce authentication for protected routes.
+
+*Error Handling*
+
+Error handling middleware (errorMiddleware.js) manages validation errors, JWT errors, MongoDB errors, etc., returning structured JSON error messages.
+
+---
+
+## Dashboard
+
+### Installation
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js
+- npm 
+
+
+To get a local copy up and running:
+
+1. Clone the repository:
+bash
+git clone https://github.com/anuragkushwaha1501/Hospital-Management-System.git
+cd dashboard
+
+
+2. Install dependencies:
+bash
+npm install
+
+
+3. Run the development server:
+bash
+npm run dev
+
+
+---
+
+### Running the Application
+
+1. Start the backend server:
+   bash
+   cd backend
+   npm start
+   
+
+2. Start the frontend development server:
+   bash
+   cd frontend
+   npm start
+   
+
+3. Open your browser and navigate to http://localhost: _your_frontend_localhost_port to see the application in action.
+
+4. Start the dashboard development server:
+   bash
+   cd dashboard
+   npm start
+   
+   
+5. Open your browser and navigate to http://localhost: _your_dashboard_localhost_port to see the application in action.
+
+### Contributing
+
+Contributions are welcome! Fork the project, make your changes, and submit a pull request.
+
+### License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
